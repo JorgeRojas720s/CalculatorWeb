@@ -1,0 +1,58 @@
+
+*{
+  margin: 0px;
+  overflow: hidden;
+  padding: 0px;
+  box-sizing: border-box;
+
+}
+
+:root{
+  --colorFondo: rgb(200,12,9);
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px; /* Espacio entre el título y los botones */
+}
+
+.buttons-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  grid-column-gap: 1px; /* Espacio entre columnas (botones) */
+  background-color: #f2f2f7; /* Color de fondo similar a iOS */
+  padding: 10px; /* Espacio interior de los botones */
+  margin: 80px;
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+.total-container {
+  grid-column: 1 / span 3; /* Ocupar todo el ancho de la fila */
+  text-align: left; /* Alinear el texto a la derecha */
+  padding: 10px; /* Espacio interior */
+  background-color: #f2f2f7; /* Color de fondo */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+.button {
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #4CAF50; /* Color de fondo */
+  color: #fff; /* Color del texto */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+  background-color: #45a049; /* Cambio de color al pasar el ratón */
+  transform: translateY(-3px); /* Desplazamiento hacia arriba al pasar el ratón */
+}
+
+.button:active {
+  transform: translateY(1px); /* Efecto de clic */
+}
+
