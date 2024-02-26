@@ -11,6 +11,11 @@
   --colorFondo: rgb(200,12,9);
 }
 
+.screen{
+
+background-color: #59bcee;
+}
+
 .title {
   display: flex;
   justify-content: center;

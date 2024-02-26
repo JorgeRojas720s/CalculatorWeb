@@ -3,6 +3,7 @@ import React from "react";
 
 type ButtonParams = {
   number: string;
+  key: number
   onClick: (params: any) => void;
 }
 
